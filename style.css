@@ -754,43 +754,71 @@ section {
 
 
 /*------contact section css------------------------------------------------------------------*/
-.contant{
+.contact {
     background: var(--secon-bg-color);
     width: 100%;
+    padding: 3rem 1rem;  /* added padding for spacing */
 }
 
-.contant form{
+.contact form {
     text-align: center;
     max-width: 50rem;
-    margin: 1rem auto;
-    margin-bottom: 3rem;
+    margin: 1rem auto 3rem auto;
+    padding: 2rem;
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2); /* optional for modern look */
 }
 
-.contant form input,
-.contant form textarea{
+.contact form input,
+.contact form textarea {
     width: 100%;
     color: var(--text-color);
     background: var(--bg-color);
     margin-bottom: .8rem;
-    border: none;
+    border: 1px solid #444; /* gives input a boundary */
     border-radius: 5px;
     padding: .7rem;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
 }
 
-.contant form textarea{
+.contact form input:focus,
+.contact form textarea:focus {
+    border: 1px solid var(--main-color);
+    box-shadow: 0px 0px 8px var(--main-color);
+}
+
+.contact form textarea {
     resize: none;
+    min-height: 120px;
 }
 
-.formBtn{
+.formBtn {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 1rem;
 }
 
-.formBtn .btn{
+.formBtn .btn {
     cursor: pointer;
     font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--main-color);
+    color: #fff;
+    transition: 0.3s ease;
 }
+
+.formBtn .btn:hover {
+    background: #ff4081; /* change hover color */
+    transform: scale(1.05);
+}
+
+
 
 /* Footer Section */
 .footer {
